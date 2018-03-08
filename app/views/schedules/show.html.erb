@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>name:</strong>
+  <%= @schedule.name %>
+</p>
+
+<p>
+  <strong>remarks:</strong>
+  <%= @schedule.remarks %>
+</p>
+
+<p>
+  <strong>action:</strong>
+  <%= @schedule.action %>
+</p>
+
+
+<p>
+  <strong>snapshotid :</strong>
+  <%= @schedule.snapshotid  %>
+</p>
+
+<p>
+  <strong>Date time:</strong>
+  <%= @schedule.dat_tme %>
+</p>
+<strong>Schedule was created on  <%= @schedule.from_date%>  at  <%= (@schedule.dat_tme).strftime(" %H:%M:%S")  %> </strong>
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to(" Back",{:action => 'index'}) %>
